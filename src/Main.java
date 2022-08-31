@@ -30,7 +30,12 @@ public class Main {
             } else if (max < spending) {
                 max = spending;
             }
-        } System.out.println(" "); {
-        System.out.printf("Минимальная сумма затрат за день составила %s рублей. \n" + "Максимальная суммазатрат за день составила %s рублей\n", min, max);
-    }}}
+        } System.out.println(" ");
+        {
+            System.out.printf("Минимальная сумма затрат за день составила %s рублей. \n" + "Максимальная суммазатрат за день составила %s рублей\n", min, max);
 
+
+            double averageDoube = (double) sum / array.length;
+            String average = String.format("%.2f", averageDoube);
+            System.out.println("Средняя трата за день = " + average);
+        }}}
