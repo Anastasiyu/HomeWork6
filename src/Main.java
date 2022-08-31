@@ -15,11 +15,22 @@ public class Main {
 
 
     public static void task1() {
-     int[] array = generateRandomArray();
-     int sum = 0;
-     for (int spending : array) {
-         sum += spending;
-     }
-        System.out.printf("Сумма трат за месяц составила %s рублей", sum);
-    }
+        int[] array = generateRandomArray();
+        int sum = 0;
+        for (int spending : array) {
+            sum += spending;
         }
+        System.out.printf("Сумма трат за месяц составила %s рублей", sum);
+
+        int min = array[0];
+        int max = array[0];
+        for (int spending : array) {
+            if (min > spending) {
+                min = spending;
+            } else if (max < spending) {
+                max = spending;
+            }
+        } System.out.println(" "); {
+        System.out.printf("Минимальная сумма затрат за день составила %s рублей. \n" + "Максимальная суммазатрат за день составила %s рублей\n", min, max);
+    }}}
+
